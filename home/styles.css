@@ -1,0 +1,331 @@
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #FFB996, #FFCF81);
+  color: #111827;
+  padding: 0;
+}
+
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: linear-gradient(to right, #FFB996, #FFCF81);
+  color: #000;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.logo img {
+  width: 30px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #1c1c1c;
+  font-weight: 500;
+  padding-bottom: 4px;
+  transition: 0.3s;
+}
+
+.nav-links li.active a,
+.nav-links li a:hover {
+  border-bottom: 2px solid #D9EDBF;
+}
+
+/* Hero Section */
+.hero {
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #1c1c1c;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+  color: #2c2c2c;
+}
+
+.hero-content button {
+  padding: 0.8rem 2rem;
+  border: none;
+  background-color: #FDFFAB;
+  color: #000;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.hero-content button:hover {
+  background-color: #D9EDBF;
+}
+
+/* Tools Section */
+.tools-section {
+  padding: 4rem 2rem;
+  background: linear-gradient(to right, #FFB996, #FFCF81);
+  text-align: center;
+  color: #222;
+}
+
+.tools-section h2 {
+  font-size: 2.2rem;
+  margin-bottom: 3rem;
+  color: #222;
+}
+
+.tools-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.tool-card {
+  background-color: #D9EDBF;
+  border-radius: 16px;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+  color: #222;
+}
+
+.tool-card:hover {
+  transform: translateY(-6px);
+}
+
+.tool-card h3 {
+  margin: 1rem 0 0.5rem;
+  font-size: 1.25rem;
+}
+
+.tool-card p {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.tool-card a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #000;
+}
+
+/* Learning Resources Section */
+.learning-resources {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.learning-resources h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  font-weight: 700;
+  color: #1c1c1c;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.card {
+  background-color: #FDFFAB;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.05);
+  max-width: 320px;
+  flex: 1 1 280px;
+  transition: transform 0.2s ease-in-out;
+  text-align: left;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: #1c1c1c;
+}
+
+.card p {
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+  color: #4b5563;
+}
+
+.card a {
+  font-weight: 600;
+  text-decoration: none;
+  color: #000;
+  display: inline-flex;
+  align-items: center;
+}
+
+.card a.purple-link,
+.card a.green-link {
+  color: #000;
+}
+
+.card .arrow {
+  margin-left: 0.3rem;
+}
+
+/* Icon Styles */
+.icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #000;
+}
+
+a.green-text,
+a.purple-text,
+a.red-text {
+  color: #000;
+}
+
+/* Glossary Section */
+#glossary {
+  padding: 4rem 2rem;
+  background-color:linear-gradient(to right, #FFB996, #FFCF81);
+  scroll-behavior: smooth;
+  scroll-margin-top: 80px;
+}
+
+#glossary h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #1c1c1c;
+}
+
+#glossary-search {
+  display: block;
+  margin: 0 auto 2rem;
+  padding: 0.8rem 1rem;
+  font-size: 1rem;
+  width: 90%;
+  max-width: 500px;
+  border-radius: 1.5rem;
+  border: 1px solid #ccc;
+}
+
+#glossary-list {
+  list-style: none;
+  padding: 0;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#glossary-list li {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background-color: #FDFFAB;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.term-title {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.term-definition {
+  display: none;
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.highlight {
+  background-color: #fff176;
+  font-weight: bold;
+}
+
+/* Glossary Letter Filter Buttons */
+.glossary-filters {
+  text-align: center;
+  margin: 2rem auto;
+  flex-wrap: wrap;
+}
+
+.letter-filter {
+  background-color: #FFCF81;
+  color: #000;
+  border: none;
+  margin: 0.2rem;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.letter-filter:hover {
+  background-color: #D9EDBF;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+  }
+
+  .tools-grid,
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #glossary-search {
+    width: 95%;
+  }
+}

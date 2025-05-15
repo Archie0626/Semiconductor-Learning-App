@@ -1,0 +1,63 @@
+#glossary {
+    max-width: 800px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  
+  #glossary-search {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+  
+  #glossary-letters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  #glossary-letters .letter-filter {
+    background-color: #eee;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  #glossary-letters .letter-filter:hover {
+    background-color: #ddd;
+  }
+  
+  #glossary-list {
+    list-style: none;
+  }
+  
+  #glossary-list li {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+    cursor: pointer;
+  }
+  
+  .term-title {
+    font-weight: bold;
+    color: #0a66c2;
+  }
+  
+  .term-definition {
+    display: none;
+    margin-top: 5px;
+    color: #555;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .highlight {
+    background-color: yellow;
+  }
+  
