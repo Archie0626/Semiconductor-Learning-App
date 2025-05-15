@@ -1,0 +1,178 @@
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #FFB996, #FFCF81);
+  color: #111827;
+  padding: 0;
+}
+
+/* Header Styling */
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to right, #FFB996, #FFCF81);
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Logo Section */
+.logo-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: bold;
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: black;
+}
+
+.logo {
+  width: 30px;
+}
+
+/* Navigation Links */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+  position: relative;
+  padding-bottom: 5px;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #444;
+}
+
+.nav-links a.active::after,
+.nav-links a:hover::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #D9EDBF;
+  bottom: 0;
+  left: 0;
+}
+
+/* Back to Home */
+.back-home {
+  margin: 1rem 2rem;
+  display: inline-block;
+  font-weight: 600;
+  color: #000;
+  text-decoration: none;
+}
+
+.back-home:hover {
+  text-decoration: underline;
+}
+
+/* Page Heading */
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #1c1c1c;
+}
+
+/* Search Box */
+#glossary-search {
+  display: block;
+  margin: 0 auto 2rem auto;
+  padding: 0.8rem 1rem;
+  width: 100%;
+  max-width: 500px;
+  font-size: 1rem;
+  border-radius: 2rem;
+  border: 1px solid #ccc;
+  background: #ccc
+}
+
+/* Filter Buttons */
+#letter-filter {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.letter-filter {
+  margin: 0.3rem;
+  padding: 0.5rem 0.9rem;
+  border: none;
+  border-radius: 1.5rem;
+  background-color: #FDFFAB;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.letter-filter:hover,
+.letter-filter.active {
+  background-color: #D9EDBF;
+  color: #000;
+}
+
+/* Glossary List */
+#glossary-list {
+  list-style: none;
+  padding: 0;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#glossary-list li {
+  background: linear-gradient(to right, #FFB996, #FFCF81);
+  border-radius: 1rem;
+  padding: 1.5rem 1.2rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s;
+}
+
+#glossary-list li:hover {
+  transform: translateY(-4px);
+}
+
+#glossary-list strong {
+  color: #1c1c1c;
+  font-size: 1.1rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  #glossary-search {
+    width: 90%;
+  }
+
+  .site-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+}
